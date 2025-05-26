@@ -1,0 +1,548 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f6fa 0%, #c3c8e8 50%, #0cea14 100%);
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #222;
+  transition: background 0.5s;
+}
+
+/* Hero Header Moderno */
+.hero-modern {
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 16px rgba(84, 18, 146, 0.10);
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 32px;
+  padding-bottom: 0;
+}
+.hero-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px 12px 24px;
+  gap: 24px;
+}
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0cea14;
+  box-shadow: 0 2px 8px rgba(84, 18, 146, 0.10);
+}
+.hero-bar h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #541292;
+}
+.hero-bar h2 {
+  margin: 4px 0 0 0;
+  font-weight: 400;
+  color: #333;
+  font-size: 1.1rem;
+}
+.hero-social a {
+  margin-left: 12px;
+  display: inline-block;
+}
+.hero-social img {
+  width: 28px;
+  height: 28px;
+  filter: grayscale(1) brightness(0.7);
+  transition: filter 0.2s, transform 0.2s;
+}
+.hero-social a:hover img {
+  filter: none;
+  transform: scale(1.15) rotate(-8deg);
+}
+.hero-nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 0 0 12px 0;
+  flex-wrap: wrap;
+}
+.hero-submenu {
+  background: #f5f6fa;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 8px rgba(84, 18, 146, 0.04);
+  padding: 12px 24px;
+  margin: 0 24px 0 24px;
+}
+.hero-submenu ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.hero-submenu li {
+  color: #541292;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0cea14;
+  border: 2px solid #541292;
+  color: rgb(59, 33, 105);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px; /* Cantos arredondados */
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(84, 18, 146, 0.08);
+}
+
+button:hover {
+  background-color: #541292;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(84, 18, 146, 0.18);
+  border-color: #0cea14;
+}
+
+#myButton {
+  background-color: #541292;
+  border: 2px solid #0cea14;
+  color: rgb(204, 190, 190);
+  border-radius: 25px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(12, 234, 20, 0.08);
+}
+
+#myButton:hover {
+  background-color: #0cea14;
+  color: #541292;
+  box-shadow: 0 4px 16px rgba(12, 234, 20, 0.18);
+  border-color: #541292;
+}
+
+/* Exemplo de Flexbox */
+.container {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center;     /* Alinha verticalmente */
+  gap: 16px;               /* Espaço entre os itens */
+}
+
+.hero {
+  background: linear-gradient(120deg, #541292 60%, #0cea14 100%);
+  color: #fff;
+  padding: 60px 20px 40px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.hero-content h2 {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.hero-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Galeria de imagens */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+.galeria img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(84, 18, 146, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.galeria img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 8px 32px rgba(84, 18, 146, 0.22);
+}
+
+/* Lista de propaganda */
+.propaganda {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.propaganda li {
+    background: #fff;
+    margin-bottom: 12px;
+    padding: 16px 24px;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    color: #541292;
+    box-shadow: 0 2px 8px rgba(84, 18, 146, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botões de navegação */
+.nav-btn {
+    background: #fff;
+    color: #541292;
+    border: 2px solid #0cea14;
+    border-radius: 30px;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    box-shadow: 0 2px 8px rgba(84, 18, 146, 0.08);
+    text-decoration: none;
+    margin: 4px;
+    display: inline-block;
+}
+.nav-btn:hover {
+    background: #0cea14;
+    color: #fff;
+    border-color: #541292;
+    box-shadow: 0 4px 16px rgba(12, 234, 20, 0.18);
+    transform: translateY(-2px) scale(1.04);
+}
+
+/* Seções e Cards */
+main {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+}
+.section {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(84, 18, 146, 0.06);
+    padding: 40px 30px;
+    margin-bottom: 32px;
+    transition: box-shadow 0.3s;
+}
+.section.alt {
+    background: #f0f0fa;
+}
+.section h3 {
+    margin-top: 0;
+    color: #541292;
+    font-size: 2rem;
+}
+.cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background: #fff;
+    border: 2px solid #0cea14;
+    border-radius: 18px;
+    padding: 24px 18px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(84, 18, 146, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+.card.active,
+.card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(84, 18, 146, 0.18);
+    border-color: #541292;
+}
+.card h4 {
+    margin-top: 0;
+    color: #0cea14;
+}
+
+/* Branding e referências */
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.referencias {
+    display: flex;
+    gap: 24px;
+    margin: 32px 0 0 0;
+    flex-wrap: wrap;
+}
+.ref-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(84, 18, 146, 0.08);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 200px;
+    font-size: 1rem;
+}
+.ref-card img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #f5f6fa;
+}
+.tech-badge {
+    display: inline-block;
+    background: #0cea14;
+    color: #fff;
+    border-radius: 8px;
+    padding: 2px 10px;
+    font-size: 0.9em;
+    margin: 4px 4px 0 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.cards .card {
+    position: relative;
+}
+.cards .card .tech-badge {
+    position: static;
+    margin-top: 8px;
+}
+
+/* Backgrounds de seções */
+.bg-index {
+    background: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+.bg-sobre {
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+.bg-projetos {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+.bg-servicos {
+    background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+.bg-contato {
+    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Overlay para leitura */
+body[class^="bg-"]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(245,246,250,0.92);
+    z-index: 0;
+    pointer-events: none;
+}
+body[class^="bg-"] main,
+body[class^="bg-"] header,
+body[class^="bg-"] footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+input, textarea {
+    padding: 12px;
+    border: 2px solid #541292;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+button[type="submit"] {
+    background: #0cea14;
+    color: #541292;
+    border: 2px solid #541292;
+    border-radius: 25px;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+button[type="submit"]:hover {
+    background: #541292;
+    color: #fff;
+}
+.form-message {
+    margin-top: 16px;
+    color: #0cea14;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 24px 0 12px 0;
+    color: #888;
+    background: #fff;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+}
+
+/* Substitua o header em todas as páginas */
+header class="hero hero-modern">
+    <div class="hero-bar">
+        <div class="branding">
+            <img class="profile-pic" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Ikaro Roger">
+            <div>
+                <h1>Ikaro Roger</h1>
+                <h2>Engenheiro de Software Sênior</h2>
+            </div>
+        </div>
+        <div class="hero-social">
+            <a href="mailto:ikaro@email.com" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email"></a>
+            <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/" target="_blank" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+            <a href="tel:999483324" title="Telefone"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Telefone"></a>
+        </div>
+    </div>
+    <nav class="hero-nav">
+        <a class="nav-btn" href="index.html">Início</a>
+        <a class="nav-btn" href="sobre.html">Sobre Mim</a>
+        <a class="nav-btn" href="projetos.html">Projetos</a>
+        <a class="nav-btn" href="servicos.html">Serviços</a>
+        <a class="nav-btn" href="contato.html">Contato</a>
+    </nav>
+    <div class="hero-submenu">
+        <ul>
+            <li><strong>Localização:</strong> São Paulo, Brasil</li>
+            <li><strong>Experiência:</strong> 12+ anos</li>
+            <li><strong>Stack:</strong> React, Node.js, Python, Cloud</li>
+            <li><strong>Contato:</strong> (99) 948-3324</li>
+        </ul>
+    </div>
+</header>
+
+<!-- Exemplo para sobre.html -->
+<section class="section">
+    <h3>Sobre Ikaro Roger</h3>
+    <p>
+        Engenheiro de Software Sênior com mais de 12 anos de experiência em desenvolvimento de soluções inovadoras para empresas globais. 
+        Especialista em arquitetura de sistemas, aplicações escaláveis e liderança técnica. 
+        Já colaborei com times de empresas como <strong>Google</strong>, <strong>Microsoft</strong> e <strong>Startups do Vale do Silício</strong>.
+    </p>
+    <div class="referencias">
+        <div class="ref-card">
+            <img src="https://logo.clearbit.com/google.com" alt="Google">
+            <span>Google - Consultor em Cloud Solutions</span>
+        </div>
+        <div class="ref-card">
+            <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft">
+            <span>Microsoft - Líder de Projeto em IA</span>
+        </div>
+        <div class="ref-card">
+            <img src="https://logo.clearbit.com/github.com" alt="GitHub">
+            <span>GitHub - Open Source Contributor</span>
+        </div>
+    </div>
+</section>
+
+<!-- Exemplo para projetos.html -->
+<section class="section">
+    <h3>Projetos de Destaque</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Plataforma de E-commerce Global</h4>
+            <p>Desenvolvimento de uma plataforma escalável utilizada por mais de 1 milhão de usuários/mês, com arquitetura serverless e integração com IA para recomendações.</p>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">AWS</span>
+        </div>
+        <div class="card">
+            <h4>App de Saúde Digital</h4>
+            <p>Aplicativo mobile premiado internacionalmente, focado em telemedicina e monitoramento em tempo real de pacientes.</p>
+            <span class="tech-badge">Flutter</span>
+            <span class="tech-badge">Firebase</span>
+        </div>
+        <div class="card">
+            <h4>Open Source: Lib de Autenticação</h4>
+            <p>Biblioteca open source com +5k estrelas no GitHub, utilizada por startups e grandes empresas para autenticação segura.</p>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">OAuth2</span>
+        </div>
+    </div>
+</section>
+
+/* Responsividade */
+@media (max-width: 900px) {
+    main {
+        max-width: 100%;
+        padding: 0 8px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    .card {
+        width: 100%;
+    }
+    .section {
+        padding: 24px 10px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+    .galeria img {
+        width: 100%;
+        height: 140px;
+    }
+    .hero-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 24px 10px 8px 10px;
+    }
+    .hero-submenu {
+        margin: 0 10px 0 10px;
+        padding: 10px;
+    }
+    .hero-submenu ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    .hero-nav {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+}

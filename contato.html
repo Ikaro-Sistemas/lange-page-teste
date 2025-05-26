@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Ikaro Roger</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body class="bg-contato">
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Contato</h1>
+            <a class="nav-btn" href="index.html">Página Principal</a>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <h3>Fale comigo</h3>
+            <form id="contactForm">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </section>
+        <section class="section alt">
+            <h3>Outros canais</h3>
+            <ul class="propaganda">
+                <li>Email: <a href="mailto:ikaro@email.com">ikaro@email.com</a></li>
+                <li>Telefone: <a href="tel:999483324">(99) 948-3324</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/seu-perfil</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ikaro Roger. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('formMessage').textContent = 'Mensagem enviada! Obrigado pelo contato.';
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>
