@@ -106,22 +106,6 @@ button:hover {
   border-color: #0cea14;
 }
 
-#myButton {
-  background-color: #541292;
-  border: 2px solid #0cea14;
-  color: rgb(204, 190, 190);
-  border-radius: 25px;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 8px rgba(12, 234, 20, 0.08);
-}
-
-#myButton:hover {
-  background-color: #0cea14;
-  color: #541292;
-  box-shadow: 0 4px 16px rgba(12, 234, 20, 0.18);
-  border-color: #541292;
-}
-
 /* Exemplo de Flexbox */
 .container {
   display: flex;
