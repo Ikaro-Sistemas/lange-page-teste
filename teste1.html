@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikaro Roger | Engenheiro de Software</title>
+    <link rel="stylesheet" href="teste.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <header class="hero hero-modern">
+        <div class="hero-bar">
+            <img class="profile-pic" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ikaro Roger">
+            <div>
+                <h1>Ikaro Roger</h1>
+                <h2>Engenheiro de Software</h2>
+            </div>
+            <div class="hero-social">
+                <a href="mailto:ikaro@email.com" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email"></a>
+                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="tel:999483324" title="Telefone"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Telefone"></a>
+            </div>
+        </div>
+        <nav class="hero-nav">
+            <a class="nav-btn" href="#sobre">Sobre Mim</a>
+            <a class="nav-btn" href="#projetos">Projetos</a>
+            <a class="nav-btn" href="#servicos">Serviços</a>
+            <a class="nav-btn" href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="section">
+            <h3>Sobre Mim</h3>
+            <p>Sou apaixonado por tecnologia e inovação. Tenho experiência em desenvolvimento web, mobile e soluções modernas para empresas de todos os portes.</p>
+        </section>
+        <section id="projetos" class="section alt">
+            <h3>Projetos Recentes</h3>
+            <ul>
+                <li>Dashboard Inteligente para E-commerce</li>
+                <li>App de Delivery com IA</li>
+                <li>Plataforma de Cursos Online</li>
+            </ul>
+        </section>
+        <section id="servicos" class="section">
+            <h3>Serviços</h3>
+            <div class="cards">
+                <div class="card">
+                    <h4>Desenvolvimento Web</h4>
+                    <p>Sites modernos, responsivos e otimizados para SEO.</p>
+                </div>
+                <div class="card">
+                    <h4>Aplicativos Mobile</h4>
+                    <p>Apps Android e iOS com performance e design profissional.</p>
+                </div>
+                <div class="card">
+                    <h4>Consultoria em TI</h4>
+                    <p>Transforme sua ideia em um produto digital de sucesso.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section alt">
+            <h3>Entre em Contato</h3>
+            <form id="contactForm">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ikaro Roger. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Interação do formulário de contato
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('formMessage').textContent = 'Mensagem enviada! Obrigado pelo contato.';
+            document.getElementById('contactForm').reset();
+        });
+
+        // Efeito de destaque nos cards ao passar o mouse
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => card.classList.add('active'));
+            card.addEventListener('mouseleave', () => card.classList.remove('active'));
+        });
+    </script>
+</body>
+</html>

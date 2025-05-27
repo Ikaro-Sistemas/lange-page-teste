@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim | Ikaro Roger</title>
+    <link rel="stylesheet" href="teste.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin: 32px 0;
+        }
+        .galeria img {
+            width: 240px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(84, 18, 146, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .galeria img:hover {
+            transform: scale(1.05) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(84, 18, 146, 0.22);
+        }
+        .nav-btn {
+            margin-top: 18px;
+            display: inline-block;
+        }
+        @media (max-width: 700px) {
+            .galeria img {
+                width: 100%;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-sobre">
+    <header class="hero hero-modern">
+        <div class="hero-bar">
+            <img class="profile-pic" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ikaro Roger">
+            <div>
+                <h1>Sobre Mim</h1>
+                <h2>Minha Jornada Profissional</h2>
+            </div>
+            <div class="hero-social">
+                <a href="mailto:ikaro@email.com" title="E-mail"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email"></a>
+                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+                <a href="tel:999483324" title="Telefone"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Telefone"></a>
+            </div>
+        </div>
+        <nav class="hero-nav">
+            <a class="nav-btn" href="index.html">Início</a>
+            <a class="nav-btn" href="sobre.html">Sobre Mim</a>
+            <a class="nav-btn" href="projetos.html">Projetos</a>
+            <a class="nav-btn" href="servicos.html">Serviços</a>
+            <a class="nav-btn" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <h3>Minha Jornada</h3>
+            <p>Olá! Sou Ikaro Roger, engenheiro de software apaixonado por tecnologia, inovação e desafios. Com mais de 10 anos de experiência, já atuei em projetos nacionais e internacionais, sempre buscando entregar soluções modernas, seguras e eficientes.</p>
+            <p>Minha missão é transformar ideias em produtos digitais de alto impacto, utilizando as melhores práticas e tecnologias do mercado.</p>
+            <div class="galeria">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Notebook moderno">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Equipe de tecnologia">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Sites em telas">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Pessoas trabalhando">
+            </div>
+        </section>
+        <section class="section alt">
+            <h3>Por que me escolher?</h3>
+            <ul class="propaganda">
+                <li>✔️ Comprometimento total com o sucesso do cliente</li>
+                <li>✔️ Atualização constante em novas tecnologias</li>
+                <li>✔️ Comunicação clara e transparente</li>
+                <li>✔️ Foco em resultados e inovação</li>
+            </ul>
+            <div style="text-align:center; margin-top:24px;">
+                <a class="nav-btn" href="projetos.html">Veja meus Projetos</a>
+                <a class="nav-btn" href="servicos.html">Conheça meus Serviços</a>
+                <a class="nav-btn" href="contato.html">Fale Comigo</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ikaro Roger. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
